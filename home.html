@@ -1,14 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
+    <title>Trang Chủ</title>
+
+    <style>
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2a6dfc; 
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #2a6dfc; 
+        }
+
+        .welcome {
+            background: linear-gradient(to right, #2a6dfc, #5c93ff);
+            color: #fff;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .welcome h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .welcome p {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .all-members {
+            padding: 60px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .all-members h2 {
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .all-members-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .member {
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .member img {
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .member h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #2a6dfc;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            .welcome h1 {
+                font-size: 2.2rem;
+            }
+
+            .all-members-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    </head>
 <body>
-    <h1 class="text-3xl font-bold underline text-clifford">
-    Hello world!
-    </h1>
+
+    <header>
+        <div class="container">
+            <a href="#" class="logo">Nhóm ...</a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Trang chủ</a></li>
+                    <li><a href="#">Thành viên 1</a></li>
+                    <li><a href="#">Thành viên 2</a></li>
+                    <li><a href="#">Thành viên 3</a></li>
+                    <li><a href="#">Thành viên 4</a></li>
+                    <li><a href="#">Thành viên 5</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="welcome">
+        <div class="container">
+            <h1>Chào mừng đến với trang web nhóm ...</h1>
+            <p>....</p>
+        </div>
+    </section>
+
+    <section class="all-members">
+        <div class="container">
+            <h2>Các thành viên</h2>
+            <div class="all-members-grid">
+                <div class="member">
+                    <img src="" alt="Ảnh không hiển thị được">
+                    <h3>Thành viên</h3>
+                    <p>Giới thiệu</p>
+                </div>
+                <div class="member">
+                    <img src="" alt="Ảnh không hiển thị được">
+                    <h3>Thành viên</h3>
+                    <p>Giới thiệu</p>
+                </div>
+                <div class="member">
+                    <img src="" alt="Ảnh không hiển thị được">
+                    <h3>Thành viên</h3>
+                    <p>Giới thiệu</p>
+                </div>
+                <div class="member">
+                    <img src="" alt="Ảnh không hiển thị được">
+                    <h3>Thành viên</h3>
+                    <p>Giới thiệu</p>
+                </div>
+                <div class="member">
+                    <img src="" alt="Ảnh không hiển thị được">
+                    <h3>Thành viên</h3>
+                    <p>Giới thiệu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nhóm ...</p>
+        </div>
+    </footer>
+
 </body>
 </html>
