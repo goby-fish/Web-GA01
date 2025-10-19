@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            background-image: url(bg.png);  background-size: cover; background-position: top center; background-repeat: repeat-y
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 1rem 0;
+            /* border-bottom: 1px solid #eee; */
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); */
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2a6dfc; 
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #2a6dfc; 
+        }
+
+        .welcome {
+            background: linear-gradient(to right, #2a6dfc, #5c93ff);
+            color: #fff;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .welcome h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .welcome p {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .all-members {
+            padding: 60px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .all-members h2 {
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .all-members-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .member {
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .member img {
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .member h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #2a6dfc;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            .welcome h1 {
+                font-size: 2.2rem;
+            }
+
+            .all-members-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    </head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="#" class="logo">Nhóm ...</a>
+            <nav>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#" class="active">Thành viên 1</a></li>
+                    <li><a href="#">Thành viên 2</a></li>
+                    <li><a href="#">Thành viên 3</a></li>
+                    <li><a href="#">Thành viên 4</a></li>
+                    <li><a href="#">Thành viên 5</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main_container" style="display: block; text-align: center; border-bottom-left-radius: 50px;">
+        <p class="introduction" style="margin-top: -1px; font-size: xx-large;">I'm Thoai</p>
+        <p class="explain" style="font-size: medium; width: 80%; margin: 0 auto;">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+    </div>
+
+<h1 class="hobbies-title" style="font-size: 2.5rem; margin: 40px 0; color: #333; text-align: center;">
+  Hobbies
+</h1>
+
+<div class="hobby"
+     style="display: flex; flex-wrap: wrap; width: 80%; margin: 50px auto; text-align: center; gap: 20px;">
+
+  <div class="hobby-item" style="background-image: url('game.jpg');">
+    <div class="overlay">Game</div>
+  </div>
+
+  <div class="hobby-item" style="background-image: url('music.jpg');">
+    <div class="overlay">Music</div>
+  </div>
+
+  <div class="hobby-item" style="background-image: url('movie.jpg');">
+    <div class="overlay">Movie</div>
+  </div>
+
+  <div class="hobby-item" style="background-image: url('code.png');">
+    <div class="overlay">Coding</div>
+  </div>
+</div>
+
+<style>
+  .hobby-item {
+    flex: 1 1 calc(50% - 20px);
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    background-repeat: no-repeat;
+  }
+
+  /* Gradient vien va glow */
+  .hobby-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(100, 150, 255, 0.6);
+  }
+
+  /* Hieu ung mo anh */
+  .hobby-item:hover::before {
+    opacity: 1;
+  }
+
+  .hobby-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(100, 150, 255, 0.4), rgba(255, 255, 255, 0.2));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    backdrop-filter: blur(4px);
+  }
+
+  /* Tao text giua anh */
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.4s ease; /* lam mo */
+    letter-spacing: 2px;
+  }
+
+  /* Hien text khi hover */
+  .hobby-item:hover .overlay {
+    opacity: 1;
+  }
+</style>
+
+<div class="skill" style="
+    width: 80%; 
+    margin: 50px auto; 
+    text-align: center; 
+    background: linear-gradient(135deg, #e6f0ff, #fef6ff); 
+    border-radius: 25px; 
+    padding-bottom: 40px;
+    padding-top: 30px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+">
+  <h1 style="font-size: 2rem; margin-bottom: 25px; color: #334;">My Skills</h1>
+  <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    <li style="background: white; padding: 15px 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: 0.3s; font-weight: 500;">
+      HTML & CSS
+    </li>
+    <li style="background: white; padding: 15px 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: 0.3s; font-weight: 500;">
+      JavaScript
+    </li>
+    <li style="background: white; padding: 15px 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: 0.3s; font-weight: 500;">
+      Python
+    </li>
+    <li style="background: white; padding: 15px 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: 0.3s; font-weight: 500;">
+      C/C++
+    </li>
+  </ul>
+</div>
+
+<script>
+  document.querySelectorAll('.skill li').forEach(li => {
+    li.addEventListener('mouseover', () => li.style.transform = 'scale(1.1)');
+    li.addEventListener('mouseout', () => li.style.transform = 'scale(1)');
+  });
+</script>
+
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nhóm ...</p>
+        </div>
+    </footer>
+
+</body>
+</html>
