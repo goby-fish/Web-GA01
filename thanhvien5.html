@@ -114,38 +114,21 @@
             text-align: center;
         }
 
-        .member-section p, .member-section ul { /* Giữ nguyên .member-section ul ở đây */
+        .member-section p, .member-section ul { 
             font-size: 1.1rem;
             line-height: 1.8;
             margin-bottom: 15px;
         }
 
         .member-section ul {
-            list-style: none; /* Giữ nguyên cái này để bỏ dấu đầu dòng mặc định */
-            padding-left: 0; /* Giữ nguyên cái này để không có thụt lề */
+            list-style: none; 
+            padding-left: 0; 
         }
 
         .member-section ul li {
             margin-bottom: 10px;
-            /* Thay đổi padding-left về 0 hoặc một giá trị nhỏ hơn nếu cần */
-            /* Vì chúng ta sẽ xóa ::before, không cần khoảng trống cho nó nữa */
-            padding-left: 0; /* Đặt lại thành 0 để các mục danh sách không bị thụt lề */
-            /* position: relative; không cần thiết nếu không có pseudo-element */
+            padding-left: 0; 
         }
-
-        /* --- PHẦN CẦN XÓA/COMMENT ĐỂ LOẠI BỎ DẤU CHẤM --- */
-        /*
-        .member-section ul li::before {
-            content: "•";
-            color: #2a6dfc;
-            position: absolute;
-            left: 0;
-            font-size: 1.2em;
-            line-height: 1;
-        }
-        */
-        /* ------------------------------------------------ */
-
 
         .contact-info p {
             margin-bottom: 10px;
@@ -264,13 +247,11 @@
 
             <div class="member-section">
                 <h2>Sở thích và Đam mê</h2>
-                <!-- THÊM LẠI THẺ <ul> BAO QUANH CÁC LI Ở ĐÂY -->
                 <ul>
                     <li><strong>Đọc truyện:</strong> Tôi đặc biệt yêu thích các thể loại phiêu lưu, võ thuật và tiên hiệp.</li>
                     <li><strong>Game:</strong> Liên minh huyền thoại, Delta force.</li>
                     <li><strong>TV show:</strong> Running man, các giải Esport như PUBG, LOL, CS2.</li>
                 </ul>
-                <!-- KẾT THÚC THẺ </ul> -->
             </div>
 
             <div class="member-section">
