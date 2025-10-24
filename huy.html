@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin Nguyễn Cát Huy</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2a6dfc; 
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #2a6dfc; 
+        }
+
+        .all-members {
+            padding: 60px 0;
+            background-color: #fff; 
+            text-align: center;
+        }
+
+        .all-members h2 {
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .profile-card {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            text-align: left;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 4px solid #2a6dfc;
+        }
+
+        .profile-info h3 {
+            font-size: 2rem;
+            color: #2a6dfc;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .profile-info p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        
+        .profile-info p strong {
+            color: #333;
+            min-width: 80px;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            .profile-card {
+                flex-direction: column; 
+                text-align: center; 
+                padding: 30px;
+            }
+
+            .profile-info h3 {
+                font-size: 1.5rem;
+            }
+            
+            .profile-info p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="home.html" class="logo">Nhóm Web Development - 23KTPM1 - GA01 - 2025</a>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Trang chủ</a></li>
+                    <li><a href="Thoại.html">Thoại</a></li>
+                    <li><a href="Đạo.html">Đạo</a></li>
+                    <li><a href="Phúc.html">Phúc</a></li>
+                    <li><a href="huy.html"  class="active">Huy</a></li>
+                    <li><a href="Hải.html">Hải</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="all-members">
+        <div class="container">
+            <h2>Thông tin cá nhân</h2>
+            
+            <div class="profile-card">
+                <img src="assets/huy.jpg" class="profile-img">
+                <div class="profile-info">
+                    <h3>Nguyễn Cát Huy</h3>
+                    <p><strong>MSSV:</strong> 21127300</p>
+                    <p><strong>Email:</strong> nchuy21@clc.fitus.edu.vn</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Nhóm Web Development - 23KTPM1 - GA01</p>
+        </div>
+    </footer>
+
+</body>
+</html>
