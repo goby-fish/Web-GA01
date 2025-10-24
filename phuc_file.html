@@ -149,7 +149,7 @@
         <div class="main">
             <div class="info-container">
                 <div class="pic-container" style="display: flex; flex-direction: column; align-items: center;">
-                    <img src="profile.jpg" alt="." style="width: 300px; height: 300px; margin: 20px 0px">
+                    <img src="assets/phucbill.jpg" alt="." style="width: auto; height: auto; margin: 20px 0px">
                 </div>
 
                 <div style="width: 90%; height: 2px; border-top: 2px solid #ccc; margin: 20px"></div>
@@ -189,7 +189,7 @@
         <div class="sidebar">
             <div class="info-container">
                 <div class="header" style="display: flex; flex-direction: row; align-items: center;">                      
-                    <img src="game.png" alt="." style="width: 50px; height: 50px;">
+                    <img src="/assets/pencil.png" alt="." style="width: 50px; height: 50px;">
                     <div class="basic-info" style="margin: 0px 20px">
                         <p style="margin: 0 0; font-size: 20px; color: #333">Skills</p>
                         <p style="margin: 0 0; font-size: 15px; color: #555">Các kỹ năng đã được học</p>
@@ -208,7 +208,7 @@
             
             <div class="info-container">
                 <div class="header" style="display: flex; flex-direction: row; align-items: center;">                      
-                    <img src="game.png" alt="." style="width: 50px; height: 50px;">
+                    <img src="assets/lifestyle.png" alt="." style="width: 50px; height: 50px;">
                     <div class="basic-info" style="margin: 0px 20px">
                         <p style="margin: 0 0; font-size: 20px; color: #333">Hobbies</p>
                         <p style="margin: 0 0; font-size: 15px; color: #555">Sở thích của bản thân</p>
@@ -229,6 +229,23 @@
     <footer>
         <p>© 2025 Nguyễn Thiên Phúc. All rights reserved.</p>
     </footer>
+    <style>
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
 
+            .sidebar, .main {
+                width: 100%;
+                margin: 0;
+                padding: 0 10px;
+            }
+
+            .main {
+                margin-top: 20px;
+            }
+        }
+    </style>
 
 </body></html>
