@@ -1,0 +1,234 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>23127456</title>
+  <style>
+    body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 1rem 0;
+      border-bottom: 1px solid #eee;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #2a6dfc; 
+      text-decoration: none;
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-left: 25px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #555;
+        font-weight: 400;
+        transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        color: #2a6dfc; 
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 20px;
+    }
+
+    .sidebar {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+        /* border-right: 2px solid #ccc; */
+        padding-left: 60px;
+    }
+
+    .main h2 {
+        display: inline;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 20px;
+        color: #333;
+    }
+
+    .main p {
+        display: inline;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 20px;
+        color: #555;
+    }
+
+    .personal-info {
+        margin: 20px 20px;
+    }
+
+    .info-container {
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px;
+        padding: 20px 20px;
+        background-image: url(assets/bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .header {
+        margin-left: 20px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+    }
+
+  </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="home.html" class="logo">Nhóm Web Development</a>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Trang chủ</a></li>
+                    <li><a href="thanhvien1.html">Thành viên 1</a></li>
+                    <li><a href="thanhvien2.html">Thành viên 2</a></li>
+                    <li><a href="thanhvien3.html">Thành viên 3</a></li>
+                    <li><a href="thanhvien4.html" class="active">Thành viên 4</a></li>
+                    <li><a href="thanhvien5.html">Thành viên 5</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="info-container">
+                <div class="pic-container" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="assets/profile.jpg" alt="." style="width: 300px; height: 300px; margin: 20px 0px">
+                </div>
+
+                <div style="width: 90%; height: 2px; border-top: 2px solid #ccc; margin: 20px"></div>
+
+                <div class="personal-info">
+                    <h2>Họ tên:</h2>
+                    <p>Nguyễn Thiên Phúc</p>
+                </div>
+                    
+                <div class="personal-info">
+                    <h2>MSSV:</h2>
+                    <p>23127456</p>
+                </div>
+                    
+                <div class="personal-info">
+                    <h2>Sinh viên:</h2>
+                    <p>Trường Đại học Khoa học Tự nhiên</p>
+                </div>
+
+                <div class="personal-info">
+                    <h2>Khoa:</h2>
+                    <p>Công nghệ thông tin chất lượng cao</p>
+                </div>
+                
+                <div class="personal-info">
+                    <h2>Chuyên ngành:</h2>
+                    <p>Mạng máy tính</p>
+                </div>
+                    
+                <div class="personal-info">
+                    <h2>Email:</h2>
+                    <p>Liên hệ qua <a href="mailto:ntphuc23@clc.fitus.edu.vn">ntphuc23@clc.fitus.edu.vn</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="info-container">
+                <div class="header" style="display: flex; flex-direction: row; align-items: center;">                      
+                    <img src="assets/game.png" alt="." style="width: 50px; height: 50px;">
+                    <div class="basic-info" style="margin: 0px 20px">
+                        <p style="margin: 0 0; font-size: 20px; color: #333">Skills</p>
+                        <p style="margin: 0 0; font-size: 15px; color: #555">Các kỹ năng đã được học</p>
+                    </div>
+                </div>
+                
+                <div style="width: 90%; height: 2px; border-top: 2px solid #ccc; margin: 20px"></div>
+
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>C/C++, Python, JavaScript</li>
+                    <li>Database (SQL)</li>
+                    <li>Làm việc nhóm</li>
+                </ul>
+            </div>
+            
+            <div class="info-container">
+                <div class="header" style="display: flex; flex-direction: row; align-items: center;">                      
+                    <img src="assets/game.png" alt="." style="width: 50px; height: 50px;">
+                    <div class="basic-info" style="margin: 0px 20px">
+                        <p style="margin: 0 0; font-size: 20px; color: #333">Hobbies</p>
+                        <p style="margin: 0 0; font-size: 15px; color: #555">Sở thích của bản thân</p>
+                    </div>
+                </div>
+
+                <div style="width: 90%; height: 2px; border-top: 2px solid #ccc; margin: 20px"></div>
+
+                <ul>
+                    <li>Chơi game, hát hò cùng bạn bè</li>
+                    <li>Chơi thể thao (cầu lông, bơi lội, chạy bộ)</li>
+                    <li>Lập trình</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+            <p>&copy; 2025 Nhóm Web Development - 23KTPM1 - GA01</p>
+    </footer>
+
+
+</body></html>
