@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>23127456</title>
@@ -62,46 +60,62 @@
     }
 
     main {
-        justify-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 20px;
+    }
+
+    .sidebar {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+        /* border-right: 2px solid #ccc; */
+        padding-left: 60px;
+    }
+
+    .main h2 {
+        display: inline;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 20px;
+        color: #333;
+    }
+
+    .main p {
+        display: inline;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 20px;
+        color: #555;
+    }
+
+    .personal-info {
+        margin: 20px 20px;
     }
 
     .info-container {
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        
-    }
-
-    .other-info {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
-        width: 850px;
-    }
-
-    .info {
-        width: 90%;
-        margin: 20px auto;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    }
-
-    /* .info.skills {
-        background-image: url('ebe.jpg');
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px;
+        padding: 20px 20px;
+        background-image: url(assets/bg.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: right;
-    } */
+    }
 
-    h1 {
-        font-size: 2rem;
-        margin-bottom: 10px;
-        color: #2a6dfc;
+    .header {
+        margin-left: 20px;
     }
 
     footer {
@@ -112,7 +126,7 @@
         margin-top: 40px;
     }
 
-    </style>
+  </style>
 </head>
 <body>
     <header>
@@ -121,10 +135,10 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="about_me.html" class="active">Thành viên 1</a></li>
+                    <li><a href="#">Thành viên 1</a></li>
                     <li><a href="#">Thành viên 2</a></li>
                     <li><a href="#">Thành viên 3</a></li>
-                    <li><a href="#">Thành viên 4</a></li>
+                    <li><a href="phuc_file.html" class="active">Thành viên 4</a></li>
                     <li><a href="#">Thành viên 5</a></li>
                 </ul>
             </nav>
@@ -132,39 +146,89 @@
     </header>
 
     <main>
-        <div class="info-container">
-            <h1>Xin chào.</h1>
-            <h2>Tôi là sinh viên của Trường Đại học Khoa học - ĐHQG-HCM.</h2>
-            <p>Tên tôi là Nguyễn Thiện Phúc - 23127456.</p>
-            <p>Nói về bản thân mình, tôi là một người yêu thích công nghệ và vọc vạch máy móc, đặc biệt là trong lĩnh vực lập trình và phát triển phần mềm. Ngoài ra, tôi còn có một số tài lẻ như chơi thể thao và âm nhạc.</p>
+        <div class="main">
+            <div class="info-container">
+                <div class="pic-container" style="display: flex; flex-direction: column; align-items: center;">
+                    <img src="profile.jpg" alt="." style="width: 300px; height: 300px; margin: 20px 0px">
+                </div>
 
-            <h2>Liên hệ với tôi</h2>
-            <p>Bạn có thể liên hệ với tôi thông qua <a href="mailto:ntphuc23@clc.fitus.edu.vn">ntphuc23@clc.fitus.edu.vn</a>.</p>
+                <div style="width: 90%; height: 2px; border-top: 2px solid #ccc; margin: 20px"></div>
+
+                <div class="personal-info">
+                    <h2>Họ tên:</h2>
+                    <p>Nguyễn Thiên Phúc</p>
+                </div>
+                    
+                <div class="personal-info">
+                    <h2>MSSV:</h2>
+                    <p>23127456</p>
+                </div>
+                    
+                <div class="personal-info">
+                    <h2>Sinh viên:</h2>
+                    <p>Trường Đại học Khoa học Tự nhiên</p>
+                </div>
+
+                <div class="personal-info">
+                    <h2>Khoa:</h2>
+                    <p>Công nghệ thông tin chất lượng cao</p>
+                </div>
+                
+                <div class="personal-info">
+                    <h2>Chuyên ngành:</h2>
+                    <p>Mạng máy tính</p>
+                </div>
+                    
+                <div class="personal-info">
+                    <h2>Email:</h2>
+                    <p>Liên hệ qua <a href="mailto:ntphuc23@clc.fitus.edu.vn">ntphuc23@clc.fitus.edu.vn</a>.</p>
+                </div>
+            </div>
         </div>
-        <div class="other-info">
-            <div class="info">
-                <h1>Sở thích.</h1>
+
+        <div class="sidebar">
+            <div class="info-container">
+                <div class="header" style="display: flex; flex-direction: row; align-items: center;">                      
+                    <img src="game.png" alt="." style="width: 50px; height: 50px;">
+                    <div class="basic-info" style="margin: 0px 20px">
+                        <p style="margin: 0 0; font-size: 20px; color: #333">Skills</p>
+                        <p style="margin: 0 0; font-size: 15px; color: #555">Các kỹ năng đã được học</p>
+                    </div>
+                </div>
+                
+                <div style="width: 90%; height: 2px; border-top: 2px solid #ccc; margin: 20px"></div>
+
                 <ul>
-                    <li>Chơi game</li>
-                    <li>Du lịch</li>
-                    <li>Lập trình</li>
-                    <li>Chơi thể thao</li>
+                    <li>HTML/CSS</li>
+                    <li>C/C++, Python, JavaScript</li>
+                    <li>Database (SQL)</li>
+                    <li>Làm việc nhóm</li>
                 </ul>
             </div>
-            <div class="info skills">
-                <h1>Kỹ năng.</h1>
+            
+            <div class="info-container">
+                <div class="header" style="display: flex; flex-direction: row; align-items: center;">                      
+                    <img src="game.png" alt="." style="width: 50px; height: 50px;">
+                    <div class="basic-info" style="margin: 0px 20px">
+                        <p style="margin: 0 0; font-size: 20px; color: #333">Hobbies</p>
+                        <p style="margin: 0 0; font-size: 15px; color: #555">Sở thích của bản thân</p>
+                    </div>
+                </div>
+
+                <div style="width: 90%; height: 2px; border-top: 2px solid #ccc; margin: 20px"></div>
+
                 <ul>
-                    <li>HTML, CSS, JavaScript</li>
-                    <li>Python, C/C++</li>
-                    <li>Làm việc nhóm</li>
+                    <li>Chơi game, hát hò cùng bạn bè</li>
+                    <li>Chơi thể thao (cầu lông, bơi lội, chạy bộ)</li>
+                    <li>Lập trình</li>
                 </ul>
             </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2023 Nguyễn Thiện Phúc. All rights reserved.</p>
+        <p>© 2025 Nguyễn Thiên Phúc. All rights reserved.</p>
     </footer>
 
-</body>
-</html>
+
+</body></html>
